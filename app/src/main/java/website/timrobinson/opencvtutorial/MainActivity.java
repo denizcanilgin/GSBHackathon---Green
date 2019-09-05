@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity implements OnTouchListener, 
         }
     };
 
+    //second commit
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
