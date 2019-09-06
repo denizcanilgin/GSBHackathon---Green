@@ -18,163 +18,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55b8d89-20fc-4aa2-80bd-0bd509828421" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bgmask.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/libraries.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/libraries.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/opencv/build/generated/source/aidl/debug/org/opencv/engine/OpenCVEngineInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/generated/source/aidl/debug/org/opencv/engine/OpenCVEngineInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/opencv/build/generated/source/aidl/release/org/opencv/engine/OpenCVEngineInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/generated/source/aidl/release/org/opencv/engine/OpenCVEngineInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/generated/source/buildConfig/debug/org/opencv/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/generated/source/buildConfig/debug/org/opencv/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/generated/source/buildConfig/release/org/opencv/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/generated/source/buildConfig/release/org/opencv/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/bundles/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/bundles/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/bundles/debug/res/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/bundles/debug/res/values/values.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/bundles/release/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/bundles/release/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/bundles/release/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/bundles/release/aapt/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/bundles/release/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/bundles/release/classes.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/bundles/release/res/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/bundles/release/res/values/values.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/R.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$3$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$3$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$3$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/Camera2Renderer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/Camera2Renderer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/Camera2Renderer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/Camera2Renderer$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/Camera2Renderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/Camera2Renderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$CvCameraViewListenerAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$CvCameraViewListenerAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/CameraGLRendererBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/CameraGLRendererBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/CameraGLSurfaceView.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/CameraGLSurfaceView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/CameraRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/CameraRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/FpsMeter.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/FpsMeter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/JavaCameraView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/JavaCameraView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/JavaCameraView$CameraWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/JavaCameraView$CameraWorker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/JavaCameraView$JavaCameraFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/JavaCameraView$JavaCameraFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/JavaCameraView.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/JavaCameraView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/StaticHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/StaticHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/android/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/calib3d/StereoMatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/calib3d/StereoMatcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/Core.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/Core.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/CvType.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/CvType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/DMatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/DMatch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/Mat.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/Mat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfByte.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfByte.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfDMatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfDMatch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfDouble.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfDouble.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfFloat.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfFloat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfFloat4.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfFloat4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfFloat6.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfFloat6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfInt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfInt4.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfInt4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfKeyPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfKeyPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfPoint2f.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfPoint2f.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfPoint3.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfPoint3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfPoint3f.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfPoint3f.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfRect.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/MatOfRect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/Range.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/Range.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/RotatedRect.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/RotatedRect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/TermCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/core/TermCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/engine/OpenCVEngineInterface$Stub$Proxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/engine/OpenCVEngineInterface$Stub$Proxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/engine/OpenCVEngineInterface$Stub.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/engine/OpenCVEngineInterface$Stub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/features2d/DescriptorExtractor.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/features2d/DescriptorExtractor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/features2d/FeatureDetector.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/features2d/FeatureDetector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/imgproc/Imgproc.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/imgproc/Imgproc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/imgproc/Moments.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/imgproc/Moments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/ml/EM.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/ml/EM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/utils/Converters.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/utils/Converters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/videoio/Videoio.class" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/classes/release/org/opencv/videoio/Videoio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/incremental/compileDebugAidl/dependency.store" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/incremental/compileDebugAidl/dependency.store" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/incremental/compileReleaseAidl/dependency.store" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/incremental/compileReleaseAidl/dependency.store" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/incremental/mergeReleaseAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/opencv/build/intermediates/incremental/packageReleaseResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/intermediates/incremental/packageReleaseResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/opencv/build/outputs/aar/opencv-release.aar" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/build/outputs/aar/opencv-release.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/opencv/opencv.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/opencv.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/aidl/debug/org/opencv/engine/OpenCVEngineInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/aidl/debug/org/opencv/engine/OpenCVEngineInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/buildConfig/debug/org/opencv/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/buildConfig/debug/org/opencv/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/classes.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/res/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/res/values/values.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/R.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$3$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$3$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$3$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/Camera2Renderer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/Camera2Renderer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/Camera2Renderer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/Camera2Renderer$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/Camera2Renderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/Camera2Renderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$CvCameraViewListenerAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$CvCameraViewListenerAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraGLRendererBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraGLRendererBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraGLSurfaceView.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraGLSurfaceView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/FpsMeter.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/FpsMeter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/JavaCameraView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/JavaCameraView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/JavaCameraView$CameraWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/JavaCameraView$CameraWorker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/JavaCameraView$JavaCameraFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/JavaCameraView$JavaCameraFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/JavaCameraView.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/JavaCameraView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/StaticHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/StaticHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/calib3d/StereoMatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/calib3d/StereoMatcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Core.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Core.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/CvType.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/CvType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/DMatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/DMatch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Mat.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Mat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfByte.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfByte.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfDMatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfDMatch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfDouble.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfDouble.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfFloat.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfFloat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfFloat4.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfFloat4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfFloat6.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfFloat6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfInt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfInt4.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfInt4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfKeyPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfKeyPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfPoint2f.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfPoint2f.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfPoint3.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfPoint3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfPoint3f.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfPoint3f.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfRect.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfRect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Range.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Range.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/RotatedRect.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/RotatedRect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/TermCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/TermCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/engine/OpenCVEngineInterface$Stub$Proxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/engine/OpenCVEngineInterface$Stub$Proxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/engine/OpenCVEngineInterface$Stub.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/engine/OpenCVEngineInterface$Stub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/features2d/DescriptorExtractor.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/features2d/DescriptorExtractor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/features2d/FeatureDetector.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/features2d/FeatureDetector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/imgproc/Imgproc.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/imgproc/Imgproc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/imgproc/Moments.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/imgproc/Moments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/ml/EM.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/ml/EM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/utils/Converters.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/utils/Converters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/videoio/Videoio.class" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/videoio/Videoio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/compileDebugAidl/dependency.store" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/compileDebugAidl/dependency.store" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary310/build/outputs/aar/openCVLibrary310-debug.aar" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/build/outputs/aar/openCVLibrary310-debug.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openCVLibrary310/openCVLibrary310.iml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary310/openCVLibrary310.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -190,17 +68,73 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GSBHackathon---Green" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="125" column="20" selection-start-line="125" selection-start-column="15" selection-end-line="125" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/Auth.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_auth.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_lock_black_24dp.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -216,26 +150,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/check.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/ColorUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1219">
+            <state relative-caret-position="391">
               <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#581#592#0" expanded="true" />
-                <element signature="e#12259#12260#0" expanded="true" />
-                <element signature="e#12291#12292#0" expanded="true" />
-                <element signature="e#12320#12321#0" expanded="true" />
-                <element signature="e#12352#12353#0" expanded="true" />
-                <element signature="e#12381#12382#0" expanded="true" />
-                <element signature="e#12413#12414#0" expanded="true" />
-                <element signature="e#12448#12449#0" expanded="true" />
-                <element signature="e#12483#12484#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -247,6 +167,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
@@ -279,13 +200,16 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/ColorUtils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/Auth.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_auth.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="589" />
-    <option name="y" value="158" />
-    <option name="width" value="1308" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -294,40 +218,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
-              <item name="OCvColorDetection" type="1abcf292:AndroidViewProjectNode" />
+              <item name="GSBHackathon---Green" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
-              <item name="OCvColorDetection" type="1abcf292:AndroidViewProjectNode" />
+              <item name="GSBHackathon---Green" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
+            </path>
+            <path>
+              <item name="GSBHackathon---Green" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
-              <item name="OCvColorDetection" type="1abcf292:AndroidViewProjectNode" />
+              <item name="GSBHackathon---Green" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="opencvtutorial" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
-              <item name="OCvColorDetection" type="1abcf292:AndroidViewProjectNode" />
+              <item name="GSBHackathon---Green" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
-              <item name="OCvColorDetection" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="OCvColorDetection" type="1abcf292:AndroidViewProjectNode" />
+              <item name="GSBHackathon---Green" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
@@ -336,6 +256,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,9 +270,18 @@
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1567674731810" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1567796811226" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\AndroidStudioProjects\GSBHackathon---Green\app\src\main\res\drawable" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="website.timrobinson.opencvtutorial" />
+    </key>
+    <key name="android.template.parentActivityClass">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\AndroidStudioProjects\OCvColorDetection\app\src\main\res\drawable" />
     </key>
@@ -389,7 +321,7 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
       <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -445,54 +377,39 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.19616205" />
-      <window_info id="Structure" side_tool="true" />
-      <window_info id="Build Variants" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Resources Explorer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Run" />
-      <window_info anchor="bottom" id="Logcat" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="Android Profiler" />
-      <window_info anchor="bottom" id="Find" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.38244852" />
-      <window_info anchor="bottom" id="Debug" />
-      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Android WiFi ADB" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Preview" weight="0.32995737" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19616205" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.06663113" side_tool="true" visible="true" weight="0.22210184" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.93336886" visible="true" weight="0.22210184" />
+      <window_info anchor="bottom" id="Debug" order="8" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.32995737" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.36300638" />
+      <window_info anchor="right" id="Android WiFi ADB" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/check.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/ColorUtils.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1219">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#581#592#0" expanded="true" />
-            <element signature="e#12259#12260#0" expanded="true" />
-            <element signature="e#12291#12292#0" expanded="true" />
-            <element signature="e#12320#12321#0" expanded="true" />
-            <element signature="e#12352#12353#0" expanded="true" />
-            <element signature="e#12381#12382#0" expanded="true" />
-            <element signature="e#12413#12414#0" expanded="true" />
-            <element signature="e#12448#12449#0" expanded="true" />
-            <element signature="e#12483#12484#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="276">
+          <caret line="125" column="20" selection-start-line="125" selection-start-column="15" selection-end-line="125" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -504,12 +421,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/check.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/ColorUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        <state relative-caret-position="391">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/Auth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_lock_black_24dp.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_auth.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
   </component>
   <component name="masterDetails">
