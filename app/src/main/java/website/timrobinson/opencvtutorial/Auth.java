@@ -130,9 +130,9 @@ public class Auth extends Activity implements View.OnClickListener {
 
     private void redirect(ParseUser parseUser){
 
-//        Intent intent = new Intent(this,Map.class);
-//        intent.putExtra("currentUser", parseUser.getEmail());
-//        startActivity(intent);
+        Intent intent = new Intent(this,Map.class);
+        intent.putExtra("currentUser", parseUser.getEmail());
+        startActivity(intent);
 
     }
 }
