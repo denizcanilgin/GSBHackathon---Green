@@ -18,6 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar;
 import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
 import com.mapbox.mapboxsdk.Mapbox;
@@ -34,6 +35,7 @@ import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
 import com.mapbox.mapboxsdk.maps.Style;
+import com.parse.ParseUser;
 
 import java.util.List;
 
@@ -46,22 +48,27 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
     private View bg_botView;
     private LinearLayout logoView;
     private ImageView floatButton;
+    private ImageView floatButtonProfile;
 
 
-    private LinearLayout ly1,ly2,ly3;
+    private LinearLayout ly1,ly2,ly3,profileView;
 
     private LinearLayout ly_l1,ly_l2,ly_l3;
     private ImageView iv_l1,iv_l2,iv_l3;
+    private TextView iv_exit;
+
+    private  LinearLayout ly_congrats;
+    private TextView countOfPlantedTrees;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Mapbox.getInstance(this, "pk.eyJ1IjoibG9jaWFsIiwiYSI6ImNqcXk2NTlkczAwOTQ0OG52OWZmYWYwOWYifQ.CX4oYv51xMu9Phmw7dUvDQ");
+        Mapbox.getInstance(this, "pk.eyJ1IjoibG9jaWFsIiwiYSI6ImNqcXk2NTlkczAwOTQ0OG52OWZmYWYwOWYifQ.CX4oYv51xMu9Phmw7dUvDQ.CX4oYv51xMu9Phmw7dUvDQ");
         setContentView(R.layout.activity_map);
         mapView = findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
-
         getSupportActionBar().hide();
 
 
@@ -77,13 +84,16 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
         bg_botView = findViewById(R.id.botview);
         logoView = findViewById(R.id.logoView);
         floatButton = findViewById(R.id.floatButton);
+        floatButtonProfile = findViewById(R.id.floatButtonProfile);
+        profileView = findViewById(R.id.profileView);
+        profileView.bringToFront();
+        floatButtonProfile.bringToFront();
+        floatButtonProfile.setOnClickListener(this);
         floatButton.setOnClickListener(this);
 
         bg_topview.bringToFront();
         bg_botView.bringToFront();
         logoView.bringToFront();
-
-
 
         mapView.getMapAsync(new OnMapReadyCallback() {
             @SuppressLint("WrongConstant")
@@ -95,8 +105,11 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
 
                         Map.this.mapboxMap = mapboxMap;
                         enableLocationComponent();
+// Map is set up and the style has loaded. Now you can add data or make other map adjustments
                     }
+
                 });
+
                 addMarkerTrees(39.958629, 32.869810,mapboxMap);
                 addMarkerTrees(39.965309, 32.878654,mapboxMap);
                 addMarkerTrees(39.952613, 32.868199,mapboxMap);
@@ -107,6 +120,7 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
                         .build();
                 mapboxMap.animateCamera(CameraUpdateFactory.newCameraPosition(position), 100);
             }
+
         });
     }
     private void enableLocationComponent() {
@@ -147,12 +161,12 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
         MarkerOptions markerOptions = new MarkerOptions();
         if (markerOptions!=null)
         {
-        markerOptions.title("Fidan Dikim Alanı");
-        IconFactory iconFactory = IconFactory.getInstance(Map.this);
-        Icon icon = iconFactory.fromResource(R.drawable.trees);
-        markerOptions.icon(icon);
-        markerOptions.position(new LatLng(lat, lon));
-        mapboxMap.addMarker(markerOptions);}
+            markerOptions.title("Fidan Dikim Alanı");
+            IconFactory iconFactory = IconFactory.getInstance(Map.this);
+            Icon icon = iconFactory.fromResource(R.drawable.trees);
+            markerOptions.icon(icon);
+            markerOptions.position(new LatLng(lat, lon));
+            mapboxMap.addMarker(markerOptions);}
 
     }
 
@@ -241,6 +255,7 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
 
             case R.id.floatButton :
 
+                //Toast.makeText(getApplicationContext(),"Ağaç dikim sayfasını aç",0).show();
 
                 showPlantTreeDialog();
 
@@ -269,7 +284,52 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
 
                 break;
 
+            case R.id.floatButtonProfile :
+
+                showProfileDialogNoCongrats();
+
+                break;
+
+            case R.id.tv_exit:
+
+                ParseUser.logOut();
+                Intent intent = new Intent(this,Auth.class);
+                startActivity(intent);
+
+                break;
+
         }
+
+    }
+
+    private void showProfileDialogNoCongrats() {
+
+
+        final Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.activity_profile);
+
+        ly_congrats = dialog.findViewById(R.id.ly_congrats);
+        iv_exit = dialog.findViewById(R.id.tv_exit);
+
+        ly_congrats.setVisibility(View.INVISIBLE);
+        countOfPlantedTrees = dialog.findViewById(R.id.tv_countOfPlantedTrees);
+        iv_exit.setOnClickListener(this);
+
+        GlobalData globalData = new GlobalData();
+
+        int countOfPlantedTreesInt = globalData.getCountOfPlantedTrees(this);
+        countOfPlantedTrees.setText( " "+ countOfPlantedTreesInt + " ");
+
+        GlobalData globalData1 = new GlobalData();
+
+        RoundCornerProgressBar progress2 = (RoundCornerProgressBar) dialog.findViewById(R.id.progress_1);
+        progress2.setProgressColor(Color.parseColor("#2DBB54"));
+        progress2.setProgressBackgroundColor(Color.parseColor("#C3CDD6"));
+        progress2.setMax(10);
+        progress2.setProgress(globalData.getCountOfPlantedTrees(this));
+
+        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        dialog.show();
 
     }
 
@@ -296,6 +356,8 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
         // custom dialog
         final Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.activity_ptree);
+
+
 
         ly1 = dialog.findViewById(R.id.layout_1);
         ly2 = dialog.findViewById(R.id.layout_2);
@@ -347,9 +409,58 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
         ly2.setOnClickListener(this);
         ly3.setOnClickListener(this);
 
+        dialog.show();
 
         dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 
+        if(QRstate != null && CVerifyState != null){
+            if(QRstate && CVerifyState){
+
+                showProfileDialog();
+                dialog.cancel();
+
+                int i = globalData.getCountOfPlantedTrees(this) + 1;
+
+                globalData.setCountOfPlantedTrees(i, this);
+
+                QRstate = false;
+                CVerifyState = false;
+                globalData.setQRCode(false);
+                globalData.setCVerify(false);
+
+
+
+
+
+            }
+        }
+
+
+
+    }
+
+    private void showProfileDialog(){
+
+        final Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.activity_profile);
+
+        ly_congrats = dialog.findViewById(R.id.ly_congrats);
+        countOfPlantedTrees = dialog.findViewById(R.id.tv_countOfPlantedTrees);
+
+        GlobalData globalData = new GlobalData();
+
+        int countOfPlantedTreesInt = globalData.getCountOfPlantedTrees(this);
+        countOfPlantedTrees.setText( " "+ countOfPlantedTreesInt + " ");
+
+        GlobalData globalData1 = new GlobalData();
+
+        RoundCornerProgressBar progress2 = (RoundCornerProgressBar) dialog.findViewById(R.id.progress_1);
+        progress2.setProgressColor(Color.parseColor("#2DBB54"));
+        progress2.setProgressBackgroundColor(Color.parseColor("#C3CDD6"));
+        progress2.setMax(10);
+        progress2.setProgress(globalData.getCountOfPlantedTrees(this));
+
+        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         dialog.show();
 
     }
