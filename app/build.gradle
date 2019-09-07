@@ -22,13 +22,16 @@ android {
 
 dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
     implementation "com.github.parse-community.Parse-SDK-Android:parse:1.18.5"
     implementation "com.android.support:appcompat-v7:28.0.0"
     implementation "com.android.support:support-v13:28.0.0"
     implementation 'com.budiyev.android:code-scanner:2.1.0'
     implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:7.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    implementation 'com.github.Abhi347:NoobCameraFlash:0.0.1'
 
-    compile project(':libraries:opencv')
+    implementation project(':libraries:opencv')
 }

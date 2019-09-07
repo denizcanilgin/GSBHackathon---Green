@@ -33,6 +33,10 @@ public class Auth extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
 
+        ParseUser parseUser = ParseUser.getCurrentUser();
+
+        if(parseUser != null)redirect(parseUser);
+
         et_mail = findViewById(R.id.et_email);
         et_pass = findViewById(R.id.et_password);
         bt_action =  (ImageView)findViewById(R.id.bt_action);
