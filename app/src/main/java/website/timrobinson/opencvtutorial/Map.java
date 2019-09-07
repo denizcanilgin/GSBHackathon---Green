@@ -3,8 +3,10 @@ package website.timrobinson.opencvtutorial;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -54,6 +56,44 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
         mapView = findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
         getSupportActionBar().hide();
+
+
+        Intent intent = getIntent();
+        Boolean redirect = intent.getBooleanExtra("Redirect",false);
+
+
+            if(redirect != null)
+                if(redirect == true)
+                    showPlantTreeDialog();
+
+//        if(qrCode != false){
+//
+//            GlobalData globaData = new GlobalData();
+//            globaData.setQRCode(true);
+//            showPlantTreeDialog();
+//
+//        }else{
+//
+//            GlobalData globaData = new GlobalData();
+//            globaData.setQRCode(false);
+//            showPlantTreeDialog();
+//            Toast.makeText(getApplicationContext(),"Bu fidana tanımlı herhangi bir fidan bulunamadı!",0).show();
+//        }
+
+//        if(vCamera != false){
+//
+//            GlobalData globaData = new GlobalData();
+//            globaData.setCVerify(true);
+//            showPlantTreeDialog();
+//            Toast.makeText(getApplicationContext(),"Bu fidan gömülü!",0).show();
+//
+//        }else{
+//
+//            GlobalData globaData = new GlobalData();
+//            globaData.setCVerify(false);
+//            showPlantTreeDialog();
+//            Toast.makeText(getApplicationContext(),"Bu fidan gömülü değil!",0).show();
+//        }
 
         bg_topview = findViewById(R.id.topview);
         bg_botView = findViewById(R.id.botview);
@@ -199,11 +239,19 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
 
             case R.id.layout_2 :
 
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+                        requestPermissions(new String[]{Manifest.permission.CAMERA}, 1);
+                    }
+                }
+
+                QRIntent();
 
                 break;
 
             case R.id.layout_3 :
 
+                VerifyCameraIntent();
 
                 break;
 
@@ -211,7 +259,25 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
 
     }
 
+    private void VerifyCameraIntent() {
+
+        Intent intent = new Intent(this,VerifyCamera.class);
+        startActivity(intent);
+
+    }
+
+    private void QRIntent() {
+
+        Intent intent = new Intent(this,QRActivity.class);
+        startActivity(intent);
+
+    }
+
     private void showPlantTreeDialog() {
+
+        GlobalData globalData = new GlobalData();
+        Boolean QRstate = globalData.getQRCode();
+        Boolean CVerifyState = globalData.getCVerify();
 
         // custom dialog
         final Dialog dialog = new Dialog(this);
@@ -229,18 +295,43 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
         iv_l2 = dialog.findViewById(R.id.iv_l2);
         iv_l3 = dialog.findViewById(R.id.iv_l3);
 
-        ly_l2.setBackgroundColor(Color.RED);
-        ly_l3.setBackgroundColor(Color.RED);
+        //CVerifyState
 
-        iv_l2.setImageResource(R.drawable.redcross);
-        iv_l3.setImageResource(R.drawable.redcross);
+        if (QRstate != null){
+            if (QRstate == true) {
+
+                ly_l2.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                iv_l2.setImageResource(R.drawable.greenmark);
+
+            } else {
+
+                ly_l2.setBackgroundColor(Color.RED);
+                iv_l2.setImageResource(R.drawable.redcross);
+
+            }
+
+    }
+
+
+        if (CVerifyState != null){
+            if (CVerifyState == true) {
+
+                ly_l3.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                iv_l3.setImageResource(R.drawable.greenmark);
+
+            } else {
+
+                ly_l3.setBackgroundColor(Color.RED);
+                iv_l3.setImageResource(R.drawable.redcross);
+
+            }
+
+        }
 
 
         ly1.setOnClickListener(this);
         ly2.setOnClickListener(this);
         ly3.setOnClickListener(this);
-
-
 
 
         dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);

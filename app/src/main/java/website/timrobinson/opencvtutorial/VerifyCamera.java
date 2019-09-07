@@ -1,5 +1,6 @@
 package website.timrobinson.opencvtutorial;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -202,11 +203,26 @@ public class VerifyCamera extends AppCompatActivity implements OnTouchListener, 
 
     private void checkCompleted(String color_name){
 
-        if(color_name.contains("Blue")){
+        if(color_name.contains("Brown") || color_name.contains("Black") || color_name.contains("Gray")){
 
-            iv_successful.setVisibility(View.VISIBLE);
 
-            Log.i("COMTAINS : ", "TRUE");
+            GlobalData globalData = new GlobalData();
+            globalData.setCVerify(true);
+
+
+            //iv_successful.setVisibility(View.VISIBLE);
+            Intent intent = new Intent(this,Map.class);
+            intent.putExtra("Redirect", true);
+            startActivity(intent);
+
+        }else{
+
+            GlobalData globaData = new GlobalData();
+            globaData.setCVerify(false);
+
+            Intent intent = new Intent(this,Map.class);
+            intent.putExtra("Redirect", true);
+            startActivity(intent);
 
         }
 
