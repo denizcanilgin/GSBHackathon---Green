@@ -64,20 +64,14 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
                     @Override
                     public void onStyleLoaded(@NonNull Style style) {
 
-
                         Map.this.mapboxMap = mapboxMap;
                         enableLocationComponent();
 // Map is set up and the style has loaded. Now you can add data or make other map adjustments
-
-
                     }
                 });
             }
         });
-
-
     }
-
     private void enableLocationComponent() {
         // Check if permissions are enabled and if not request
         if (PermissionsManager.areLocationPermissionsGranted(this)) {
