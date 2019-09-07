@@ -97,7 +97,6 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
                         enableLocationComponent();
                     }
                 });
-
                 addMarkerTrees(39.958629, 32.869810,mapboxMap);
                 addMarkerTrees(39.965309, 32.878654,mapboxMap);
                 addMarkerTrees(39.952613, 32.868199,mapboxMap);
@@ -106,9 +105,7 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
                 CameraPosition position = new CameraPosition.Builder()
                         .tilt(60)
                         .build();
-
                 mapboxMap.animateCamera(CameraUpdateFactory.newCameraPosition(position), 100);
-
             }
         });
     }
