@@ -31,6 +31,7 @@ dependencies {
     implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:7.0.0'
     implementation 'de.hdodenhof:circleimageview:3.0.1'
     implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    implementation 'com.github.Abhi347:NoobCameraFlash:0.0.1'
 
     compile project(':libraries:opencv')
 }

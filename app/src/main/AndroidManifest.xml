@@ -4,6 +4,8 @@
     package="website.timrobinson.opencvtutorial">
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+
+
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
     <uses-feature android:name="android.hardware.camera.front"/>
@@ -18,7 +20,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Map"
+        <activity android:name=".Auth"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +30,7 @@
         </activity>
 
         <activity android:name=".VerifyCamera"/>
-        <activity android:name=".Auth"/>
+        <activity android:name=".Map"/>
         <activity android:name=".QRActivity"/>
 
 

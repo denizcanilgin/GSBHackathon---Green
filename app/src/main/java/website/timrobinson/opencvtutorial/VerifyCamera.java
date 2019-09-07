@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.noob.noobcameraflash.managers.NoobCameraManager;
+
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
@@ -65,6 +67,10 @@ public class VerifyCamera extends AppCompatActivity implements OnTouchListener, 
         setContentView(R.layout.activity_vcamera);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
+
+        getSupportActionBar().hide();
+
+
         iv_successful = (ImageView) findViewById(R.id.iv_successfull);
 
         touch_coordinates = (TextView) findViewById(R.id.touch_coordinates);
@@ -98,6 +104,7 @@ public class VerifyCamera extends AppCompatActivity implements OnTouchListener, 
         super.onDestroy();
         if (mOpenCvCameraView != null)
             mOpenCvCameraView.disableView();
+
     }
 
     @Override

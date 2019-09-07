@@ -29,6 +29,7 @@ import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
 import com.mapbox.mapboxsdk.maps.Style;
+import com.parse.ParseUser;
 
 import java.util.List;
 
@@ -41,12 +42,14 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
     private View bg_botView;
     private LinearLayout logoView;
     private ImageView floatButton;
+    private ImageView floatButtonProfile;
 
 
-    private LinearLayout ly1,ly2,ly3;
+    private LinearLayout ly1,ly2,ly3,profileView;
 
     private LinearLayout ly_l1,ly_l2,ly_l3;
     private ImageView iv_l1,iv_l2,iv_l3;
+    private TextView iv_exit;
 
     private  LinearLayout ly_congrats;
     private TextView countOfPlantedTrees;
@@ -104,6 +107,11 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
         bg_botView = findViewById(R.id.botview);
         logoView = findViewById(R.id.logoView);
         floatButton = findViewById(R.id.floatButton);
+        floatButtonProfile = findViewById(R.id.floatButtonProfile);
+        profileView = findViewById(R.id.profileView);
+        profileView.bringToFront();
+        floatButtonProfile.bringToFront();
+        floatButtonProfile.setOnClickListener(this);
         floatButton.setOnClickListener(this);
 
         bg_topview.bringToFront();
@@ -260,7 +268,52 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
 
                 break;
 
+            case R.id.floatButtonProfile :
+
+                showProfileDialogNoCongrats();
+
+                break;
+
+            case R.id.tv_exit:
+
+                ParseUser.logOut();
+                Intent intent = new Intent(this,Auth.class);
+                startActivity(intent);
+
+                break;
+
         }
+
+    }
+
+    private void showProfileDialogNoCongrats() {
+
+
+        final Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.activity_profile);
+
+        ly_congrats = dialog.findViewById(R.id.ly_congrats);
+        iv_exit = dialog.findViewById(R.id.tv_exit);
+
+        ly_congrats.setVisibility(View.INVISIBLE);
+        countOfPlantedTrees = dialog.findViewById(R.id.tv_countOfPlantedTrees);
+        iv_exit.setOnClickListener(this);
+
+        GlobalData globalData = new GlobalData();
+
+        int countOfPlantedTreesInt = globalData.getCountOfPlantedTrees(this);
+        countOfPlantedTrees.setText( " "+ countOfPlantedTreesInt + " ");
+
+        GlobalData globalData1 = new GlobalData();
+
+        RoundCornerProgressBar progress2 = (RoundCornerProgressBar) dialog.findViewById(R.id.progress_1);
+        progress2.setProgressColor(Color.parseColor("#2DBB54"));
+        progress2.setProgressBackgroundColor(Color.parseColor("#C3CDD6"));
+        progress2.setMax(10);
+        progress2.setProgress(globalData.getCountOfPlantedTrees(this));
+
+        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        dialog.show();
 
     }
 
