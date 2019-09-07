@@ -2,14 +2,18 @@ package website.timrobinson.opencvtutorial;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mapbox.android.core.permissions.PermissionsListener;
@@ -35,6 +39,11 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
     private LinearLayout logoView;
     private ImageView floatButton;
 
+
+    private LinearLayout ly1,ly2,ly3;
+
+    private LinearLayout ly_l1,ly_l2,ly_l3;
+    private ImageView iv_l1,iv_l2,iv_l3;
 
 
     @Override
@@ -177,11 +186,66 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
 
             case R.id.floatButton :
 
-                Toast.makeText(getApplicationContext(),"Ağaç dikim sayfasını aç",0).show();
+                //Toast.makeText(getApplicationContext(),"Ağaç dikim sayfasını aç",0).show();
+
+                showPlantTreeDialog();
+
+                break;
+
+            case R.id.layout_1 :
+
+
+                break;
+
+            case R.id.layout_2 :
+
+
+                break;
+
+            case R.id.layout_3 :
+
 
                 break;
 
         }
+
+    }
+
+    private void showPlantTreeDialog() {
+
+        // custom dialog
+        final Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.activity_ptree);
+
+        ly1 = dialog.findViewById(R.id.layout_1);
+        ly2 = dialog.findViewById(R.id.layout_2);
+        ly3 = dialog.findViewById(R.id.layout_3);
+
+        ly_l1 = dialog.findViewById(R.id.ly_l1);
+        ly_l2 = dialog.findViewById(R.id.ly_l2);
+        ly_l3 = dialog.findViewById(R.id.ly_l3);
+
+        iv_l1 = dialog.findViewById(R.id.iv_l1);
+        iv_l2 = dialog.findViewById(R.id.iv_l2);
+        iv_l3 = dialog.findViewById(R.id.iv_l3);
+
+        ly_l2.setBackgroundColor(Color.RED);
+        ly_l3.setBackgroundColor(Color.RED);
+
+        iv_l2.setImageResource(R.drawable.redcross);
+        iv_l3.setImageResource(R.drawable.redcross);
+
+
+        ly1.setOnClickListener(this);
+        ly2.setOnClickListener(this);
+        ly3.setOnClickListener(this);
+
+
+
+
+        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+
+        dialog.show();
 
     }
 }
