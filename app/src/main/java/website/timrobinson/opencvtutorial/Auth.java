@@ -1,6 +1,7 @@
 package website.timrobinson.opencvtutorial;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,6 +13,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.Toast;
+
+import com.parse.LogInCallback;
+import com.parse.ParseException;
+import com.parse.ParseUser;
+import com.parse.SignUpCallback;
 
 public class Auth extends Activity implements View.OnClickListener {
 
@@ -53,9 +59,80 @@ public class Auth extends Activity implements View.OnClickListener {
 
                 Toast.makeText(getApplicationContext()," logOrReg : " + logOrReg , 0 ).show();
 
+                action();
+
                 break;
 
         }
+
+    }
+
+    private void action() {
+
+        if(logOrReg) login();
+        else register();
+
+    }
+
+    private void login() {
+
+        String entered_mail = et_mail.getText().toString().trim();
+        String entered_pass = et_pass.getText().toString().trim();
+
+        ParseUser.logInInBackground(entered_mail, entered_pass, new LogInCallback() {
+            public void done(ParseUser user, ParseException e) {
+                if (user != null) {
+
+                    //Toast.makeText(Auth.this, "Successfully Logged In!", Toast.LENGTH_SHORT).show();
+                    redirect(user);
+
+
+                } else {
+
+                    Toast.makeText(Auth.this, "" + e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+
+                }
+            }
+        });
+    }
+
+    private void register() {
+
+        String entered_mail = et_mail.getText().toString().trim();
+        String entered_pass = et_pass.getText().toString().trim();
+
+        final ParseUser user = new ParseUser();
+        user.setUsername(entered_mail.substring(0,5));
+        user.setPassword(entered_pass);
+        user.setEmail(entered_mail);
+
+        user.signUpInBackground(new SignUpCallback() {
+            @Override
+            public void done(ParseException e) {
+
+                if(e == null){
+
+                    //Toast.makeText(Auth.this, "Successfully Registered", Toast.LENGTH_SHORT).show();
+                    redirect(user);
+
+                }else{
+
+                    Toast.makeText(Auth.this, "" + e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+
+                }
+
+            }
+
+        });
+
+    }
+
+
+    private void redirect(ParseUser parseUser){
+
+//        Intent intent = new Intent(this,Map.class);
+//        intent.putExtra("currentUser", parseUser.getEmail());
+//        startActivity(intent);
 
     }
 }
