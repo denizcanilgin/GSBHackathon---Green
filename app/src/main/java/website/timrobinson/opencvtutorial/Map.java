@@ -21,6 +21,12 @@ import android.widget.Toast;
 import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
 import com.mapbox.mapboxsdk.Mapbox;
+import com.mapbox.mapboxsdk.annotations.Icon;
+import com.mapbox.mapboxsdk.annotations.IconFactory;
+import com.mapbox.mapboxsdk.annotations.MarkerOptions;
+import com.mapbox.mapboxsdk.camera.CameraPosition;
+import com.mapbox.mapboxsdk.camera.CameraUpdateFactory;
+import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.location.LocationComponent;
 import com.mapbox.mapboxsdk.location.modes.CameraMode;
 import com.mapbox.mapboxsdk.location.modes.RenderMode;
@@ -51,10 +57,11 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Mapbox.getInstance(this, "pk.eyJ1IjoibG9jaWFsIiwiYSI6ImNqcXk2NTlkczAwOTQ0OG52OWZmYWYwOWYifQ.CX4oYv51xMu9Phmw7dUvDQ.CX4oYv51xMu9Phmw7dUvDQ");
+        Mapbox.getInstance(this, "pk.eyJ1IjoibG9jaWFsIiwiYSI6ImNqcXk2NTlkczAwOTQ0OG52OWZmYWYwOWYifQ.CX4oYv51xMu9Phmw7dUvDQ");
         setContentView(R.layout.activity_map);
         mapView = findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
+
         getSupportActionBar().hide();
 
 
@@ -62,38 +69,9 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
         Boolean redirect = intent.getBooleanExtra("Redirect",false);
 
 
-            if(redirect != null)
-                if(redirect == true)
-                    showPlantTreeDialog();
-
-//        if(qrCode != false){
-//
-//            GlobalData globaData = new GlobalData();
-//            globaData.setQRCode(true);
-//            showPlantTreeDialog();
-//
-//        }else{
-//
-//            GlobalData globaData = new GlobalData();
-//            globaData.setQRCode(false);
-//            showPlantTreeDialog();
-//            Toast.makeText(getApplicationContext(),"Bu fidana tanımlı herhangi bir fidan bulunamadı!",0).show();
-//        }
-
-//        if(vCamera != false){
-//
-//            GlobalData globaData = new GlobalData();
-//            globaData.setCVerify(true);
-//            showPlantTreeDialog();
-//            Toast.makeText(getApplicationContext(),"Bu fidan gömülü!",0).show();
-//
-//        }else{
-//
-//            GlobalData globaData = new GlobalData();
-//            globaData.setCVerify(false);
-//            showPlantTreeDialog();
-//            Toast.makeText(getApplicationContext(),"Bu fidan gömülü değil!",0).show();
-//        }
+        if(redirect != null)
+            if(redirect == true)
+                showPlantTreeDialog();
 
         bg_topview = findViewById(R.id.topview);
         bg_botView = findViewById(R.id.botview);
@@ -105,19 +83,32 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
         bg_botView.bringToFront();
         logoView.bringToFront();
 
+
+
         mapView.getMapAsync(new OnMapReadyCallback() {
             @SuppressLint("WrongConstant")
             @Override
             public void onMapReady(@NonNull final MapboxMap mapboxMap) {
-                mapboxMap.setStyle("mapbox://styles/locial/ck071rdl50bzb1cpfnrqiozz3", new Style.OnStyleLoaded() {
+                mapboxMap.setStyle("mapbox://styles/locial/ck09vofvt1qnu1dlj9tn6ijoq", new Style.OnStyleLoaded() {
                     @Override
                     public void onStyleLoaded(@NonNull Style style) {
 
                         Map.this.mapboxMap = mapboxMap;
                         enableLocationComponent();
-// Map is set up and the style has loaded. Now you can add data or make other map adjustments
                     }
                 });
+
+                addMarkerTrees(39.958629, 32.869810,mapboxMap);
+                addMarkerTrees(39.965309, 32.878654,mapboxMap);
+                addMarkerTrees(39.952613, 32.868199,mapboxMap);
+                addMarkerFeeds(39.957730, 32.879162,mapboxMap);
+
+                CameraPosition position = new CameraPosition.Builder()
+                        .tilt(60)
+                        .build();
+
+                mapboxMap.animateCamera(CameraUpdateFactory.newCameraPosition(position), 100);
+
             }
         });
     }
@@ -153,6 +144,33 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
             permissionsManager = new PermissionsManager(this);
             permissionsManager.requestLocationPermissions(this);
         }
+    }
+
+    private void addMarkerTrees(double lat,double lon,MapboxMap mapboxMap) {
+        MarkerOptions markerOptions = new MarkerOptions();
+        if (markerOptions!=null)
+        {
+        markerOptions.title("Fidan Dikim Alanı");
+        IconFactory iconFactory = IconFactory.getInstance(Map.this);
+        Icon icon = iconFactory.fromResource(R.drawable.trees);
+        markerOptions.icon(icon);
+        markerOptions.position(new LatLng(lat, lon));
+        mapboxMap.addMarker(markerOptions);}
+
+    }
+
+
+    private void addMarkerFeeds(double lat,double lon,MapboxMap mapboxMap) {
+        MarkerOptions markerOptions = new MarkerOptions();
+        if (markerOptions!=null)
+        {
+            markerOptions.title("Fidan Bankası");
+            IconFactory iconFactory = IconFactory.getInstance(Map.this);
+            Icon icon = iconFactory.fromResource(R.drawable.seed);
+            markerOptions.icon(icon);
+            markerOptions.position(new LatLng(lat, lon));
+            mapboxMap.addMarker(markerOptions);}
+
     }
 
     @Override
@@ -226,7 +244,6 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
 
             case R.id.floatButton :
 
-                //Toast.makeText(getApplicationContext(),"Ağaç dikim sayfasını aç",0).show();
 
                 showPlantTreeDialog();
 
@@ -310,7 +327,7 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
 
             }
 
-    }
+        }
 
 
         if (CVerifyState != null){
