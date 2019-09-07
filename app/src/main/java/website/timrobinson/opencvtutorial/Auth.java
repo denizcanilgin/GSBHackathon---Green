@@ -26,7 +26,7 @@ public class Auth extends Activity implements View.OnClickListener {
     private ImageView bt_action;
     private Switch sw_logOrReg;
 
-    private Boolean logOrReg;
+    private Boolean logOrReg = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -57,7 +57,7 @@ public class Auth extends Activity implements View.OnClickListener {
 
             case R.id.bt_action:
 
-                Toast.makeText(getApplicationContext()," logOrReg : " + logOrReg , 0 ).show();
+                //Toast.makeText(getApplicationContext()," logOrReg : " + logOrReg , 0 ).show();
 
                 action();
 
@@ -69,8 +69,8 @@ public class Auth extends Activity implements View.OnClickListener {
 
     private void action() {
 
-        if(logOrReg) login();
-        else register();
+        if(logOrReg) register();
+        else login();
 
     }
 
@@ -83,7 +83,7 @@ public class Auth extends Activity implements View.OnClickListener {
             public void done(ParseUser user, ParseException e) {
                 if (user != null) {
 
-                    //Toast.makeText(Auth.this, "Successfully Logged In!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Auth.this, "Successfully Logged In!", Toast.LENGTH_SHORT).show();
                     redirect(user);
 
 
