@@ -18,12 +18,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e55b8d89-20fc-4aa2-80bd-0bd509828421" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/GlobalData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/GlobalData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/opencv/opencv.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/opencv/opencv.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="390" column="27" selection-start-line="390" selection-start-column="27" selection-end-line="390" selection-end-column="27" />
+            <state relative-caret-position="355">
+              <caret line="395" lean-forward="true" selection-start-line="395" selection-end-line="395" />
             </state>
           </provider>
         </entry>
@@ -466,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567872764256</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="alles guten">
+      <created>1567878610568</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567878610568</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -506,7 +507,8 @@
     <MESSAGE value="parse library added" />
     <MESSAGE value="auth is ok" />
     <MESSAGE value="profile is ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="profile is ok" />
+    <MESSAGE value="alles guten" />
+    <option name="LAST_COMMIT_MESSAGE" value="alles guten" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/check.png">
@@ -719,8 +721,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/website/timrobinson/opencvtutorial/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="390" column="27" selection-start-line="390" selection-start-column="27" selection-end-line="390" selection-end-column="27" />
+        <state relative-caret-position="355">
+          <caret line="395" lean-forward="true" selection-start-line="395" selection-end-line="395" />
         </state>
       </provider>
     </entry>
