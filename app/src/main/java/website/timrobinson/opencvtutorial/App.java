@@ -21,22 +21,6 @@ public class App extends Application {
                 .build()
         );
 
-        ParseObject gameScore = new ParseObject("HORSETHIEF");
-        gameScore.put("score", 1337);
-        gameScore.put("playerName", "Cem GOKALP");
-        gameScore.put("cheatMode", false);
-        gameScore.saveInBackground(new SaveCallback() {
-            @Override
-            public void done(ParseException e) {
-                if(e == null){
-
-                    Log.i("RESULT ::", "SUCCEDED");
-
-                }else
-                    Log.i("RESULT ::", "FAILED" + e.getMessage());
-
-            }
-        });
 
     }
 }

@@ -18,6 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar;
 import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
 import com.mapbox.mapboxsdk.Mapbox;
@@ -46,6 +47,10 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
 
     private LinearLayout ly_l1,ly_l2,ly_l3;
     private ImageView iv_l1,iv_l2,iv_l3;
+
+    private  LinearLayout ly_congrats;
+    private TextView countOfPlantedTrees;
+
 
 
     @Override
@@ -283,6 +288,8 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
         final Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.activity_ptree);
 
+
+
         ly1 = dialog.findViewById(R.id.layout_1);
         ly2 = dialog.findViewById(R.id.layout_2);
         ly3 = dialog.findViewById(R.id.layout_3);
@@ -333,9 +340,58 @@ public class Map extends AppCompatActivity implements PermissionsListener, View.
         ly2.setOnClickListener(this);
         ly3.setOnClickListener(this);
 
+        dialog.show();
 
         dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 
+        if(QRstate != null && CVerifyState != null){
+            if(QRstate && CVerifyState){
+
+                showProfileDialog();
+                dialog.cancel();
+
+                int i = globalData.getCountOfPlantedTrees(this) + 1;
+
+                globalData.setCountOfPlantedTrees(i, this);
+
+                QRstate = false;
+                CVerifyState = false;
+                globalData.setQRCode(false);
+                globalData.setCVerify(false);
+
+
+
+
+
+            }
+        }
+
+
+
+    }
+
+    private void showProfileDialog(){
+
+        final Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.activity_profile);
+
+        ly_congrats = dialog.findViewById(R.id.ly_congrats);
+        countOfPlantedTrees = dialog.findViewById(R.id.tv_countOfPlantedTrees);
+
+        GlobalData globalData = new GlobalData();
+
+        int countOfPlantedTreesInt = globalData.getCountOfPlantedTrees(this);
+        countOfPlantedTrees.setText( " "+ countOfPlantedTreesInt + " ");
+
+        GlobalData globalData1 = new GlobalData();
+
+        RoundCornerProgressBar progress2 = (RoundCornerProgressBar) dialog.findViewById(R.id.progress_1);
+        progress2.setProgressColor(Color.parseColor("#2DBB54"));
+        progress2.setProgressBackgroundColor(Color.parseColor("#C3CDD6"));
+        progress2.setMax(10);
+        progress2.setProgress(globalData.getCountOfPlantedTrees(this));
+
+        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         dialog.show();
 
     }
