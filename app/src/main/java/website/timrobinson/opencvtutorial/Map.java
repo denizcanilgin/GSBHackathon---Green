@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
@@ -21,18 +25,37 @@ import com.mapbox.mapboxsdk.maps.Style;
 
 import java.util.List;
 
-public class MapsActivity extends AppCompatActivity implements PermissionsListener {
+public class Map extends AppCompatActivity implements PermissionsListener, View.OnClickListener {
     private MapView mapView;
     private PermissionsManager permissionsManager;
     private MapboxMap mapboxMap;
+
+    private View bg_topview;
+    private View bg_botView;
+    private LinearLayout logoView;
+    private ImageView floatButton;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Mapbox.getInstance(this, "pk.eyJ1IjoibG9jaWFsIiwiYSI6ImNqcXk2NTlkczAwOTQ0OG52OWZmYWYwOWYifQ.CX4oYv51xMu9Phmw7dUvDQ.CX4oYv51xMu9Phmw7dUvDQ");
-        setContentView(R.layout.activity_maps);
+        setContentView(R.layout.activity_map);
         mapView = findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
+
+        bg_topview = findViewById(R.id.topview);
+        bg_botView = findViewById(R.id.botview);
+        logoView = findViewById(R.id.logoView);
+        floatButton = findViewById(R.id.floatButton);
+        floatButton.setOnClickListener(this);
+
+        bg_topview.bringToFront();
+        bg_botView.bringToFront();
+        logoView.bringToFront();
+
         mapView.getMapAsync(new OnMapReadyCallback() {
             @SuppressLint("WrongConstant")
             @Override
@@ -42,7 +65,7 @@ public class MapsActivity extends AppCompatActivity implements PermissionsListen
                     public void onStyleLoaded(@NonNull Style style) {
 
 
-                        MapsActivity.this.mapboxMap = mapboxMap;
+                        Map.this.mapboxMap = mapboxMap;
                         enableLocationComponent();
 // Map is set up and the style has loaded. Now you can add data or make other map adjustments
 
@@ -149,6 +172,21 @@ public class MapsActivity extends AppCompatActivity implements PermissionsListen
         } else {
             //Toast.makeText(this, R.string.user_location_permission_not_granted, Toast.LENGTH_LONG).show();
             finish();
+        }
+
+    }
+
+    @Override
+    public void onClick(View view) {
+
+        switch (view.getId()){
+
+            case R.id.floatButton :
+
+                Toast.makeText(getApplicationContext(),"Ağaç dikim sayfasını aç",0).show();
+
+                break;
+
         }
 
     }

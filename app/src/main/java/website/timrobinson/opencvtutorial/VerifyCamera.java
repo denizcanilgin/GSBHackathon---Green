@@ -61,7 +61,7 @@ public class VerifyCamera extends AppCompatActivity implements OnTouchListener, 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_vcamera);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         iv_successful = (ImageView) findViewById(R.id.iv_successfull);
